@@ -1,0 +1,25 @@
+* Get metadata in the footer working
+* Dynamically build breadcrumbs in the nav header
+* Add portfolio section + template ('as is')
+
+* Move handlebars logic into a separate module.
+
+* Re-do site design and CSS
+
+* Make the site mobile-friendly
+* Build a fancier portfolio page layout
+* Fill out a more complete portfolio page
+* Fill out a more complete travel section
+* Get the MapBox map working on the travel pages in a static mode
+
+* Add a logging library
+**  Use a prettifying console output lib, like ?? https://github.com/marak/colors.js
+
+* use nodemon to run a hot-reloading local dev server
+* Fix http-server so that it doesn't cache stuff indefinitely
+
+* Fix things up again so that the git commit hash shows up in the footer.
+
+* Update netlify to build using this repo
+* Supplant the old website with this.
+* Archive and deprecate the old website repos (react-static and flask-based)

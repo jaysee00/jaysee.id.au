@@ -39,7 +39,7 @@ Handlebars.registerHelper("debug", function(optionalValue) {
 const _loadContext = async() => {
     // Load the repo
     const repo = await Git.Repository.open(".");
-    const commit = await repo.getBranchCommit("master");
+    const commit = await repo.getBranchCommit("main");
 
     return {
         publish: {

@@ -1,0 +1,16 @@
+<h2>{{ node.attributes.title }}</h2>
+{{{ node.body }}}
+<ol class="travelBlogs">
+{{#each travelBlogs }}
+    <li class="location-summary">
+        <h3><a href="/{{ this.path }}">{{ attributes.title }}</a></h3>
+        <div class="location-body">
+            <ul class="location-elements">
+                <li class="element-location">{{ attributes.location }} · <span class="flag-icon flag-icon-{{toLowerCase attributes.country}}"></span></li>
+                <li class="element-date">{{ formatDate attributes.date }}</li>
+            </ul>
+            <p>{{ attributes.lede }}</p>
+        </div>
+    </li>
+{{/each}}
+</ol>

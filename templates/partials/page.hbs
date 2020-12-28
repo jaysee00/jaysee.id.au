@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="{{ node.attributes.description }}" />
+    <title>{{ node.attributes.title }} | jaysee.id.au</title>
+    <link rel="stylesheet" href="/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+
+    {{#if node.attributes.coords}}
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
+    {{/if}}
+</head>
+
+<body>
+    <main>
+        {{> header }}
+        {{> (lookup . 'bodyTemplate') }}
+        {{> footer }}
+    </main>
+</body>
+</html>

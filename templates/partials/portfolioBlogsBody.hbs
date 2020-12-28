@@ -1,0 +1,7 @@
+<h2>{{ node.attributes.title }}</h2>
+{{{ node.body }}}
+<ol class="portfolioBlogs">
+{{#each portfolioBlogs }}
+    <li class="portfolio-summary"><a href="/{{this.path}}">{{attributes.title }}</a></li>
+{{/each}}
+</ol>

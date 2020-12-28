@@ -1,0 +1,30 @@
+{{#if node.attributes.coords}}
+    <div id="map"></div>
+    <script>
+	    // TO MAKE THE MAP APPEAR YOU MUST
+	    // ADD YOUR ACCESS TOKEN FROM
+	    // https://account.mapbox.com
+	    mapboxgl.accessToken = 'pk.eyJ1IjoiamF5c2VlMDAiLCJhIjoiY2pyZ28yaGw4MDA0YzQ2bnJ6aWswdHoyZSJ9.iq3D256lN-g99I3Q74_RgA';
+        var map = new mapboxgl.Map({
+            container: 'map', // container id
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+            center: [{{ node.attributes.coords.longitude }}, {{node.attributes.coords.latitude}}], // starting position [lng, lat]
+            zoom: 10 // starting zoom
+            });
+
+        var marker = new mapboxgl.Marker()
+            .setLngLat([{{ node.attributes.coords.longitude }}, {{node.attributes.coords.latitude}}])
+            .addTo(map);
+    </script>
+{{/if}}
+
+{{{ node.body }}}
+{{#if node.attributes.hero }}
+    <div class="hero">
+        <hr />
+        <img src="{{ node.attributes.hero.url }}" />
+        <p>{{ node.attributes.hero.description }}</p>
+    </div>
+
+    
+{{/if}}

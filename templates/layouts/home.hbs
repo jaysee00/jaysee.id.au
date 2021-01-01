@@ -1,0 +1,41 @@
+{{!--  TODO: Reconcile this template with the 'blog' layout --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no" />
+    <meta name="description" content="{{ node.attributes.description }}" />
+    <title>{{ node.attributes.title }} | jaysee.id.au</title>
+    <link rel="stylesheet" href="/theme.css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link href="/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+
+    {{#if node.attributes.coords}}
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
+    {{/if}}
+</head>
+<body>
+    {{>header showHero=true activeTab="home"}}
+    <main>
+        <div class="portrait-container">
+            <img class="portrait" src="/images/joe-portrait.jpg"/>
+            <h3>Joe Clark</h3>
+            <h4><em>“I make software!”</em></h4>
+            <div class="portrait-buttons">
+                <span class="portrait-button"><a href="https://github.com/jaysee00"><img src="/images/GitHub-Mark-32px.png" /></a></span>
+                <span class="portrait-button"><a href="https://www.linkedin.com/in/josephleeclark/"><img src="/images/LI-In-Bug.png" /></a></span>
+                <span class="portrait-button"><a href="/contact"><img src="/images/email.png"></a></span>
+            </div>
+        </div>
+        <h1>Hello there!</h1>
+        <p>
+        My name is <strong>Joe Clark</strong>. I'm an all-round "software guy" based in Perth, Western Australia. I love solving real user problems, video gaming and travelling the world (global pandemics permitting).
+        </p><p>
+        As a <em>bona fide</em> 90's kid, having my own personal slice of the Internet is a dream come true. Don't worry; I won't make you sign my guest book.
+        </p>
+    </main>
+    {{> footer}}
+</body>
+</html>

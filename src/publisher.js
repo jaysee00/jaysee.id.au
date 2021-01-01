@@ -16,15 +16,17 @@ const compileTemplate = (templatePath) => {
 // TODO: Make this dynamic.
 Handlebars.registerPartial("page", compileTemplate('partials/page.hbs'));
 Handlebars.registerPartial("header", compileTemplate('partials/header.hbs'));
+Handlebars.registerPartial("breadcrumb", compileTemplate('partials/breadcrumb.hbs'));
 Handlebars.registerPartial("footer", compileTemplate('partials/footer.hbs'));
 Handlebars.registerPartial("bodyDefault", compileTemplate('partials/bodyDefault.hbs'));
 Handlebars.registerPartial("travelBlogsBody", compileTemplate('partials/travelBlogsBody.hbs'));
 Handlebars.registerPartial("portfolioBlogsBody", compileTemplate('partials/portfolioBlogsBody.hbs'));
+Handlebars.registerPartial("blog", compileTemplate('layouts/blog.hbs'));
+Handlebars.registerPartial("home", compileTemplate('layouts/home.hbs'));
 
 Handlebars.registerHelper("formatDate", function(date) {
     return moment(date).format('YYYY/MM/DD');
 });
-
 Handlebars.registerHelper("toLowerCase", function(str) {
     return str ? str.toLowerCase() : "";
 });
@@ -33,6 +35,13 @@ Handlebars.registerHelper("debug", function(optionalValue) {
         console.log("Value");
         console.log("====================");
         console.log(optionalValue);
+    }
+});
+Handlebars.registerHelper("breadcrumbMatch", (path, crumb) => {
+    if (crumb === "/") {
+        return path === "index.html";
+    } else {
+        return ("/" + path).startsWith(crumb);
     }
 });
 

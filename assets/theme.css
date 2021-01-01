@@ -1,0 +1,233 @@
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 50em;
+    font-weight: bold;
+}
+
+nav li.active {
+    background-color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+nav li.active a {
+    color: #6f8497;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav li {
+    margin-right: 20px;
+    line-height: 2.5em;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header {
+    background-color: #6f8497;
+    color: white;
+}
+
+main {
+    max-width: 50em;
+    margin: 0 auto;
+}
+
+body {
+    line-height: 1.5;
+    /* padding: 4em 1em; */
+    color: #555;
+}
+
+a {
+    color: #70989f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #566b78;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+
+/* h2,
+h1 {
+    margin-top: 1em;
+    padding-top: 1em;
+} */
+
+.hero {
+    background-color: #263d36;
+    background-image: url("/images/bg-hero-2.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 5vw 2em;
+    text-align: center;
+}
+
+
+/* Other crap */
+
+#map {
+    width: 80%;
+    height: 300px;
+    margin: auto;
+}
+
+
+/* blog image */
+
+.blogimg {
+    width: 80%;
+    margin: auto;
+}
+
+.blogimg img {
+    width: 100%;
+    box-shadow: 5px 5px 5px grey;
+    border: 1px solid grey;
+}
+
+.blogimg p {
+    color: grey;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.blogimg hr {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.portrait {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.portrait-buttons {
+    padding-top: 5px;
+    width: 128px;
+    margin: auto;
+    display: flex;
+    justify-items: center;
+}
+
+.portrait-buttons img {
+    width: 24px;
+}
+
+.portrait-button {
+    margin: auto;
+}
+
+.portrait-container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 5px;
+    color: white;
+    background-color: #6f8497
+}
+
+.fine-print {
+    list-style-type: none;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.fine-print a {
+    color: #b4dcff;
+}
+
+.portrait-container h3,
+.portrait-container h4 {
+    text-align: center;
+    margin: 0;
+}
+
+
+/** Travel Section **/
+
+.location-summary {
+    list-style-type: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.location-summary h3 a {
+    text-decoration: none;
+}
+
+.location-summary h3 a:hover {
+    text-decoration: underline;
+}
+
+.location-elements {
+    list-style-type: none;
+    padding: 0;
+    color: #777777;
+    font-size: 0.9em;
+}
+
+.location-body {
+    padding-left: 20px;
+}
+
+.element-location:before {
+    content: "🌎";
+}
+
+.element-date:before {
+    content: "📅";
+}

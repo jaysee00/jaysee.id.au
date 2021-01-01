@@ -4,29 +4,6 @@ const config = require("./config");
 const publisher = require('./publisher');
 const processor = require('./processor');
 
-// Glob: File pattern matching: https://www.npmjs.com/package/glob
-
-// Init:
-//  - Load and configure handlebars.
-//  - Load and configure logging library
-// Load all files from src dir.
-// Visit each file and transform into a 'node'.
-//      -> Lookup the right "behaviour", 
-//          -> Behaviour defines, publish URL, slug, render template. 
-//      -> Create some kind of 'node' object and populate it. 
-//      -> Push the node into a publish queue
-//      -> Maybe export the node into a queryable object for reference by other renderers.
-// Publish & render
-//      -> Load and compile the appropriate renderer & template.
-//      -> Inject data from query context as required. 
-//      -> Execute render
-//      -> Write to file system. 
-// Wrap
-//  - Log stats
-//  - Done!
-
-
-
 console.log("Starting publish");
 const outputs = processor.processDir(config.srcDir)
 

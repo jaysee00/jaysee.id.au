@@ -1,7 +1,15 @@
 <header>
-    <ul class="breadcrumbs">
-        {{#each crumbs }}
-            <li class="breadcrumb"><a href="{{ this.href }}">{{ this.name }}</a></li>
-        {{/each}}
-    </ul>
-</header>
+        <nav>
+            {{#if showHero }}
+            <div class="hero">
+            </div>
+            {{/if}}
+            <ul>
+                {{> breadcrumb crumbPath="/" crumbName="Home"}}
+                {{> breadcrumb crumbPath="/portfolio" crumbName="Portfolio"}}
+                {{> breadcrumb crumbPath="/travel" crumbName="Travel"}}
+                {{!-- <li>Resume</li>
+                <li>Contact</li> --}}
+            </ul>
+        </nav>
+    </header>

@@ -5,6 +5,7 @@
 * Fill out a more complete travel section
 
 ## Refactoring
+* Refactor and tidy up CSS (Consider using LESS?)
 * Add a logging library
 **  Use a prettifying console output lib, like ?? https://github.com/marak/colors.js
 * use nodemon to run a hot-reloading local dev server

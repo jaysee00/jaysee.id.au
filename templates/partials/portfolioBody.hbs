@@ -1,0 +1,15 @@
+{{{ node.body }}}
+
+{{#if node.attributes.liveUrl}}
+    <div class="button-container">
+        <a class="cta-button" href="{{node.attributes.liveUrl}}">Try it out</a>
+    </div>
+{{/if}}
+
+{{#if node.attributes.hero }}
+<div class="blogimg">
+    <hr />
+    <img src="{{ node.attributes.hero.url }}" />
+    <p>{{ node.attributes.hero.description }}</p>
+</div>
+{{/if}}

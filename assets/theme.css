@@ -224,3 +224,36 @@ footer {
 .element-date:before {
     content: "📅";
 }
+
+.cta-button:hover {
+    background-color: #815a57;
+}
+
+.cta-button:active {
+    background-color: #ba9a9d;
+    box-shadow: inset 2px 2px 2px grey;
+}
+
+.cta-button {
+    background-color: #ad7368;
+    font-weight: bold;
+    color: white;
+    width: 25vw;
+    max-width: 30vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: x-large;
+    border: 1px solid #333;
+    border-radius: 2px;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -20,6 +20,7 @@ Handlebars.registerPartial("breadcrumb", compileTemplate('partials/breadcrumb.hb
 Handlebars.registerPartial("footer", compileTemplate('partials/footer.hbs'));
 Handlebars.registerPartial("bodyDefault", compileTemplate('partials/bodyDefault.hbs'));
 Handlebars.registerPartial("travelBlogsBody", compileTemplate('partials/travelBlogsBody.hbs'));
+Handlebars.registerPartial("portfolioBody", compileTemplate('partials/portfolioBody.hbs'));
 Handlebars.registerPartial("portfolioBlogsBody", compileTemplate('partials/portfolioBlogsBody.hbs'));
 Handlebars.registerPartial("blog", compileTemplate('layouts/blog.hbs'));
 Handlebars.registerPartial("home", compileTemplate('layouts/home.hbs'));

@@ -1,5 +1,7 @@
+## Other
+* Add more details to portfolio blog (eg. publish date, repo URL, etc.).
+
 ## Big improvements
-* Make the site mobile-friendly
 * Build a fancier portfolio page layout
 * Fill out a more complete portfolio page
 * Fill out a more complete travel section

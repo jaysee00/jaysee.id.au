@@ -13,9 +13,12 @@
         "front-matter": "^4.0.2",
         "fs-extra": "^9.0.1",
         "handlebars": "^4.7.6",
-        "http-server": "^0.12.3",
+        "http-server": "^13.0.1",
         "marked": "^2.0.0",
         "moment": "^2.29.1",
-        "nodegit": "^0.27.0"
+        "nodegit": "^0.27.0",
+
+        "normalize-url": "^4.5.1",
+        "tar": "^4.4.18"
     }
 }

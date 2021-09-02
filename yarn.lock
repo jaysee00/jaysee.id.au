@@ -752,10 +752,10 @@ lowercase-keys@^2.0.0:
   resolved "https://packages.atlassian.com/api/npm/npm-remote/lowercase-keys/-/lowercase-keys-2.0.0.tgz#2603e78b7b4b0006cbca2fbcc8a3202558ac9479"
   integrity sha1-JgPni3tLAAbLyi+8yKMgJVislHk=
 
-marked@^1.2.5:
-  version "1.2.9"
-  resolved "https://packages.atlassian.com/api/npm/npm-remote/marked/-/marked-1.2.9.tgz#53786f8b05d4c01a2a5a76b7d1ec9943d29d72dc"
-  integrity sha1-U3hviwXUwBoqWna30eyZQ9Kdctw=
+marked@^2.0.0:
+  version "2.0.1"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/marked/-/marked-2.0.1.tgz#5e7ed7009bfa5c95182e4eb696f85e948cefcee3"
+  integrity sha1-Xn7XAJv6XJUYLk62lvhelIzvzuM=
 
 mime-db@1.46.0:
   version "1.46.0"

@@ -1,3 +1,12 @@
+## Content to Add
+* AtlasShipped
+* Spotify plugin for Bitbucket
+* Moving to Perth
+* Trip to Busselton Jetty
+* Continuous PLugin Deployment plugin
+* ShipIt Wallboard
+
+
 ## Other
 * Add more details to portfolio blog (eg. publish date, repo URL, etc.).
 
@@ -5,6 +14,7 @@
 * Build a fancier portfolio page layout
 * Fill out a more complete portfolio page
 * Fill out a more complete travel section
+* Add a section for my speaking portfolio
 
 ## Refactoring
 * Refactor and tidy up CSS (Consider using LESS?)

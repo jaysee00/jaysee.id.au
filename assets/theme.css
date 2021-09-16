@@ -89,6 +89,14 @@ strong {
 }
 
 
+/** Inline markdown images **/
+
+main img {
+    max-width: 90%;
+    margin: auto;
+}
+
+
 /* Other crap */
 
 #map {
@@ -223,6 +231,52 @@ footer {
 
 .element-date:before {
     content: "📅";
+}
+
+
+/** Portfolio styles **/
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.card-title {
+    background-color: rgb(0, 0, 0, 0.75);
+    padding: 0.5em;
+}
+
+.card-title h3 {
+    margin: 0;
+}
+
+.card-title p {
+    font-size: smaller;
+    margin: 0;
+}
+
+.card:hover {
+    border: 2px solid silver;
+    background-color: rgb(230, 230, 230);
+}
+
+.card {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    color: white;
+    width: 15em;
+    height: 12em;
+    margin: 0.5em;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-shadow: 0.25em 0.25em darkgray;
+    background-color: rgb(200, 200, 200);
+    background-blend-mode: multiply;
+    background-size: cover;
+    text-decoration: none;
 }
 
 .cta-button:hover {

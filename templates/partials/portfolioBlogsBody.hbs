@@ -1,6 +1,13 @@
 {{{ node.body }}}
-<ol class="portfolioBlogs">
+<div class="cards">
 {{#each portfolioBlogs }}
-    <li class="portfolio-summary"><a href="/{{this.path}}">{{attributes.title }}</a></li>
+    <a class="card"
+        href="/{{this.path}}"
+         style="background-image: url({{attributes.hero.url}})">
+        <div class="card-title">
+        <h3>{{ attributes.title }}</h3>
+        <p>{{ attributes.lede }}</p>
+        </div>
+    </a>    
 {{/each}}
-</ol>
+</div>

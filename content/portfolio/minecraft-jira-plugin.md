@@ -1,7 +1,8 @@
 ---
 behaviour: portfolioBlog
-title: Minecraft Jira Plugin    
-# TODO: Add lede, publish date, and repo URL.
+title: Minecraft & Jira 
+lede: Building a Jira plugin for Minecraft using Bukkit.
+date: 2011-12-13
 repo: https://bitbucket.org/jaysee00/minecraftjiraplugin/src
 hero:
     url: /images/charlie-minecraft.png
@@ -14,6 +15,5 @@ Although I didn't win ShipIt, I did make it to the final round of voting, and my
 I worked with our marketing team to create a little video showing off the new APIs in JIRA 5.0:
 
 [![JIRA 5 Minecraft Plugin](https://img.youtube.com/vi/hMRmOIGaFnw/0.jpg)](https://www.youtube.com/watch?v=hMRmOIGaFnw)
-*Click on the image to watch the video*
 
-After the fact I added a blog to our website describing how I built the plugin and recorded the video: [From ShipIt to Final Cut – Building Jira’s Minecraft Integration](https://www.atlassian.com/blog/archives/building-jira-integration-with-minecraft)
+*Click on the image to watch the video*

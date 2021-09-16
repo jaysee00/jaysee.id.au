@@ -1,12 +1,13 @@
 ---
 behaviour: portfolioBlog
-title: Twilight Imperium Leaderboard for Extra Life 2018
+title: Twilight Imperium Stream Overlay 
+lede: Tracking victory points and donations for Extra Life.
 # TODO: Add lede, publish date, and repo URL.
 repo: https://github.com/jaysee00/ti4-overlay
 hero:
     url: /images/ti-stream-with-overlay.png
     description: A screenshot of our charity livestream event with a custom overlay showing a game leaderboard. The leaderboard is written in React.
----   
+---
 Every year, a group of folks from the [Atlassian Austin office](https://www.atlassian.com/company/careers/austin) team up for [Extra Life](https://www.extra-life.org/); a 24 hour gaming marathon to raise money for sick kids and children's hospitals around the world.
 
 For 2018, we decided to play and live stream a game of [Twilight Imperium](https://en.wikipedia.org/wiki/Twilight_Imperium). It's a sprawling board game of galactic conquest with six players, a bunch of rules, hundreds of game pieces, various unpronouncable alien species and it takes about 8 hours to play a single game. If you're like me, that sounds like a day well spent!

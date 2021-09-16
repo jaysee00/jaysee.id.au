@@ -1,7 +1,7 @@
 ---
 behaviour: portfolioBlog
-title: Tetronimoes in Vanilla JavaScript
-lede: I built a tetronimoes-style game when learning basic JavaScript and browser DOM manipulation.
+title: Tetronimoes in JavaScript
+lede: Learning JS and DOM manipulation by building a simple game.
 date: 2015-07-28
 repo: https://github.com/jaysee00/tetrominoes
 liveUrl: https://jaysee00.github.io/tetrominoes/

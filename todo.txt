@@ -1,11 +1,11 @@
 ## Content to Add
-* AtlasShipped
-* Spotify plugin for Bitbucket
-* Moving to Perth
-* Trip to Busselton Jetty
-* Continuous PLugin Deployment plugin
-* ShipIt Wallboard
-
+* Minecraft arduino box
+* Confluence Beer plugin
+* Confluence Swag plugin
+* burger builder.
+* Update ti4-overlay
+* T1 Tetris?
+* T1 Soccer
 
 ## Other
 * Add more details to portfolio blog (eg. publish date, repo URL, etc.).
@@ -15,8 +15,14 @@
 * Fill out a more complete portfolio page
 * Fill out a more complete travel section
 * Add a section for my speaking portfolio
+* Add filterable 'tags' to the portfolio (eg. java/js, shipit)
+* Add a SiteMap
 
 ## Refactoring
+* Examine Google Chrome lighthouse recommendations, eg.
+** Convert images to WebP/AVIF during build
+** Add PwA features
+** Remove blocking resources
 * Refactor and tidy up CSS (Consider using LESS?)
 * Add a logging library
 **  Use a prettifying console output lib, like ?? https://github.com/marak/colors.js

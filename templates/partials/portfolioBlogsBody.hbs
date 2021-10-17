@@ -7,6 +7,9 @@
         <div class="card-title">
         <h3>{{ attributes.title }}</h3>
         <p>{{ attributes.lede }}</p>
+        {{#attributes.tags}}
+            <span class="card-tag">{{this}}</span>
+        {{/attributes.tags}}
         </div>
     </a>    
 {{/each}}

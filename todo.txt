@@ -7,11 +7,7 @@
 * T1 Tetris?
 * T1 Soccer
 
-## Other
-* Add more details to portfolio blog (eg. publish date, repo URL, etc.).
-
 ## Big improvements
-* Build a fancier portfolio page layout
 * Fill out a more complete portfolio page
 * Fill out a more complete travel section
 * Add a section for my speaking portfolio
@@ -19,6 +15,7 @@
 * Add a SiteMap
 
 ## Refactoring
+* Minify and bundle CSS + JS
 * Examine Google Chrome lighthouse recommendations, eg.
 ** Convert images to WebP/AVIF during build
 ** Add PwA features

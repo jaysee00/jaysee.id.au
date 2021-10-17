@@ -8,6 +8,8 @@ repo:
 hero:
     url: /images/atlasshipped-herobg.png
     description: Blank
+tags: 
+    - Python
 ---
 
 In 2013, I partnered with a colleague from work to build "ShipIt-ShipIt" - a ShipIt entry to help Atlassian employees ship packages around the world. As a company with a global employee footprint, there is often a need to ship t-shirts, small mementos and bits and pieces around the world.

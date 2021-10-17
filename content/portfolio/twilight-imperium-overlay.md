@@ -7,6 +7,9 @@ repo: https://github.com/jaysee00/ti4-overlay
 hero:
     url: /images/ti-stream-with-overlay.png
     description: A screenshot of our charity livestream event with a custom overlay showing a game leaderboard. The leaderboard is written in React.
+tags:
+    - JavaScript
+    - React
 ---
 Every year, a group of folks from the [Atlassian Austin office](https://www.atlassian.com/company/careers/austin) team up for [Extra Life](https://www.extra-life.org/); a 24 hour gaming marathon to raise money for sick kids and children's hospitals around the world.
 

@@ -8,6 +8,8 @@ liveUrl: https://jaysee00.github.io/tetrominoes/
 hero:
     url: /images/tetronimoes.png
     description: A screenshot from my tetronimoes game.
+tags:
+    - Java
 ---    
 In 2015 I was just beginning to dip my toes into the world of front-end web development and JavaScript. I had started working at Atlassian and the nature of my role was becoming more and more "full stack" as I worked solo on our Confluence/SharePoint integration, and spent more time within the Confluence code base.
 

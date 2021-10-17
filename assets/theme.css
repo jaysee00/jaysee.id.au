@@ -257,6 +257,14 @@ footer {
     margin: 0;
 }
 
+.card-tag {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    font-size: smaller;
+    padding: 3px 5px;
+}
+
 .card:hover {
     border: 2px solid silver;
     background-color: rgb(230, 230, 230);

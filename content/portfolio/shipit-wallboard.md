@@ -8,6 +8,8 @@ repo:
 hero:
     url: /images/new-wallboard.png
     description: Blank
+tags:
+    - JavaScript
 ---
 In 2013 I had just moved to San Francisco and was tapped on the shoulder to help co-ordinate the next ShipIt event. At the time, the Atlassian office in San Francsico was located at a warehouse on Harrison St. The keystone feature of the office was a giant project screen in the middle of the office and a large central staircase that also served as seating for the entire office during presentations and town halls. 
 

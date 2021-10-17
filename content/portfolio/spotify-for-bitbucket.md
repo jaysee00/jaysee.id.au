@@ -8,6 +8,8 @@ repo:
 hero:
     url: /images/spotify-plugin-hero.png
     description: Blank
+tags:  
+    - Java
 ---
 One of my sillier ShipIt entries was a Spotify plugin for Bitbucket Server. I thought it would be funny if the creator of a pull request could choose some music to accompany the pull request for the reviewer(s). After all, sometimes getting some code to finally work can be an emotional experience! 
 

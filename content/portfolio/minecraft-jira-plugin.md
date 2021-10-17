@@ -1,12 +1,14 @@
 ---
 behaviour: portfolioBlog
 title: Minecraft & Jira 
-lede: Building a Jira plugin for Minecraft using Bukkit.
+lede: Building a Jira plugin for Minecraft
 date: 2011-12-13
 repo: https://bitbucket.org/jaysee00/minecraftjiraplugin/src
 hero:
     url: /images/charlie-minecraft.png
     description: Former Atlassian logo built inside Minecraft
+tags:
+    - Java
 ---    
 Back when Minecraft was at the peak of its *zeitgeist*, I created a Minecraft/Jira integration for ShipIt. 
 

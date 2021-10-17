@@ -1,13 +1,15 @@
 ---
 behaviour: portfolioBlog
 title: Bamboo CD Plugin
-lede: Continuous deployment for Atlassian plugins
+lede: Continuous deployment for plugins
 date: 2011-12-30
 repo:
     url: https://bitbucket.org/atlassianlabs/bamboo-continuous-plugin-deployment/
 hero:
     url: /images/bamboo-cd-hero.png
     description: Blank
+tags:
+    - Java
 ---
 
 In 2011, Continuous Deployment was a hot new buzzword at Atlassian. Teams across the company were grappling with how to rapidly integrate and deploy work to shorten feedback cycles and detect breakages sooner. A particularly impressive achievement at around this time (for which I can take no credit) is when the Confluence team was able to run daily deployments of Confluence from the main branch to the Confluence site used day-to-day by the entire company. 

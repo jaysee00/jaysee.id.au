@@ -8,6 +8,8 @@ repo:
 hero:
     url: /images/bg-hero-2.jpg
     description: Blank
+tags:
+    - JavaScript
 ---
 This website has been a work in progress for as long as I can remember. Or, at least, for so long that I can't really remember exactly when I first started working on it.
 

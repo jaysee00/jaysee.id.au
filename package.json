@@ -17,8 +17,16 @@
         "marked": "^2.0.0",
         "moment": "^2.29.1",
         "nodegit": "^0.27.0",
-
+        "nodemon": "^2.0.13",
         "normalize-url": "^4.5.1",
         "tar": "^4.4.18"
+    },
+    "nodemonConfig": {
+        "ext": "js,css,md,hbs",
+        "ignore": [
+            ".git",
+            "node_modules",
+            "build"
+        ]
     }
 }

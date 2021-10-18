@@ -6,7 +6,7 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-        "dev:start": "cd build/ && npx http-server -p 8080 -d false ",
+        "dev:start": "cd build/ && npx http-server -p 8080 -d false -c-1",
         "build": "node ./src/index.js"
     },
     "devDependencies": {

@@ -5,7 +5,8 @@ const publisher = require('./publisher');
 const processor = require('./processor');
 
 console.log("Starting publish");
-const outputs = processor.processDir(config.srcDir)
+const outputs = processor.processDir(config.srcDir);
+const assets = processor.processAssets(config.assetsDir);
 
 console.log(`Publishing to ${config.outDir}`);
 
@@ -14,7 +15,6 @@ fs.removeSync(config.outDir);
 fs.mkdirSync(config.outDir);
 
 publisher.publishOutputs(outputs);
-// copy assets to build dir
-fs.copySync(config.assetsDir, config.outDir);
+publisher.publishAssets(assets);
 
 console.log("Finished");

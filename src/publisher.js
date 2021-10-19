@@ -64,6 +64,28 @@ const _loadContext = async() => {
 
 const defaultTemplateContext = _loadContext();
 
+const publishAsset = async(asset) => {
+    const fullPath = path.join(config.outDir, asset.path);
+    const pathInfo = path.parse(fullPath);
+
+    // TODO: Improve log output here. 
+    // console.log(`Recursively creating dir ${pathInfo.dir}`);
+    fs.ensureDirSync(pathInfo.dir);
+
+    console.log(`Writing file to ${fullPath}`)
+
+    var buffer;
+    if (typeof asset.output === "function") {
+        buffer = asset.output();
+    } else {
+        buffer = asset.output;
+    }
+
+
+    fs.writeFileSync(fullPath, buffer);
+    // console.log("Done");
+}
+
 const publishOutput = async(output) => {
 
     const fullPath = path.join(config.outDir, output.path);
@@ -116,6 +138,11 @@ const publishOutputs = (allOutputs) => {
     allOutputs.forEach(publishOutput);
 };
 
+const publishAssets = (allAssets) => {
+    allAssets.forEach(publishAsset);
+}
+
 module.exports = {
-    publishOutputs: publishOutputs
+    publishOutputs: publishOutputs,
+    publishAssets: publishAssets
 }

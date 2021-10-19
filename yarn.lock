@@ -333,6 +333,13 @@ ci-info@^2.0.0:
   resolved "https://packages.atlassian.com/api/npm/npm-remote/ci-info/-/ci-info-2.0.0.tgz#67a9e964be31a51e15e5010d58e6f12834002f46"
   integrity sha1-Z6npZL4xpR4V5QENWObxKDQAL0Y=
 
+clean-css@^5.2.1:
+  version "5.2.1"
+  resolved "https://packages.atlassian.com/api/npm/npm-remote/clean-css/-/clean-css-5.2.1.tgz#e5bdb1bee5f332c67e98cb6181251d4f88c0a6ab"
+  integrity sha1-5b2xvuXzMsZ+mMthgSUdT4jApqs=
+  dependencies:
+    source-map "~0.6.0"
+
 cli-boxes@^2.2.1:
   version "2.2.1"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/cli-boxes/-/cli-boxes-2.2.1.tgz#ddd5035d25094fce220e9cab40a45840a440318f"
@@ -1684,7 +1691,7 @@ signal-exit@^3.0.2:
   resolved "https://packages.atlassian.com/api/npm/npm-remote/signal-exit/-/signal-exit-3.0.5.tgz#9e3e8cc0c75a99472b44321033a7702e7738252f"
   integrity sha1-nj6MwMdamUcrRDIQM6dwLnc4JS8=
 
-source-map@^0.6.1:
+source-map@^0.6.1, source-map@~0.6.0:
   version "0.6.1"
   resolved "https://packages.atlassian.com/api/npm/npm-remote/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   integrity sha1-dHIq8y6WFOnCh6jQu95IteLxomM=

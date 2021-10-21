@@ -1,10 +1,10 @@
 import CleanCSS from 'clean-css';
 
-import { GraphItem, Graph, Preprocessor } from '../Graph.js';
+import { GraphItem, Graph, GraphPreprocessor } from '../Graph.js';
 import * as log from '../../util/log.js';
 import { GraphItemFilter, PreprocessorDef } from '../../config.js';
 
-class CssPreprocessor implements Preprocessor {
+class CssPreprocessor implements GraphPreprocessor {
     
     name: string;
     filter: GraphItemFilter;

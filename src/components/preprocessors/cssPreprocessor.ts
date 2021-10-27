@@ -1,10 +1,10 @@
 import CleanCSS from 'clean-css';
 
-import { GraphItem, Graph, GraphPreprocessor } from '../Graph.js';
+import { GraphItem, Graph, GraphOperator } from '../graph.js';
 import * as log from '../../util/log.js';
 import { GraphItemFilter, PreprocessorDef } from '../../config.js';
 
-class CssPreprocessor implements GraphPreprocessor {
+class CssPreprocessor implements GraphOperator {
     
     name: string;
     filter: GraphItemFilter;
@@ -16,24 +16,24 @@ class CssPreprocessor implements GraphPreprocessor {
         this.options = def.options;
     }
 
-    process(graph: Graph) {
+    run(graph: Graph) {
+        log.msg(`Running CSS preprocessor`);
         graph.filter(this.filter).visit(this.processGraphItem)
     }
 
-    processGraphItem(item: GraphItem): GraphItem {
+    processGraphItem(item: GraphItem) {
+        if (!item.isFile) {
+            return;
+        }
+
         // minify
-        log.msg(`\tProcessing ${item.fileName}`);
+        log.msg(`Minifying ${item.fileName}`);
         const output = new CleanCSS({}).minify(item.getContents());
     
         item.getContents = () => {
             return Buffer.from(output.styles);
         }
-    
-        return item;
     };
 }
 
-
-
 export default CssPreprocessor;
-

@@ -1,3 +1,8 @@
+## Priority
+* gitignore compiled typescript files!
+* Add timestamp to stdout messages
+* Mirror stdout messages to logfile.
+
 ## Content to Add
 * Minecraft arduino box
 * Confluence Beer plugin
@@ -6,6 +11,8 @@
 * Update ti4-overlay
 * T1 Tetris?
 * T1 Soccer
+
+
 
 ## Big improvements
 * Fill out a more complete portfolio page

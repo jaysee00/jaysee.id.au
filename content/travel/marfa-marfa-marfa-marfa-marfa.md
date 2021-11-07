@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Marfa Marfa Marfa Marfa Marfa!
 lede: A weekend trip to the west Texas desert and the Davis mountains
 date: 2019-12-06

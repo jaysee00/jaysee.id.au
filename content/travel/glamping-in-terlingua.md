@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Glamping in Terlingua
 lede: A weekend camping in a tipi in the remote Texas ghost town of Terlingua, along with a day trip into Big Bend National Park
 date: 2018-08-31

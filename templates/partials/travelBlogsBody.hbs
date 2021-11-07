@@ -1,14 +1,14 @@
-{{{ node.body }}}
+{{{ fm.md }}}
 <ol class="travelBlogs">
-{{#each travelBlogs }}
+{{#each entries }}
     <li class="location-summary">
-        <h3><a href="/{{ this.path }}">{{ attributes.title }}</a></h3>
+        <h3><a href="/{{ this.url }}">{{ this.fm.attributes.title }}</a></h3>
         <div class="location-body">
             <ul class="location-elements">
-                <li class="element-location">{{ attributes.location }} · <span class="flag-icon flag-icon-{{toLowerCase attributes.country}}"></span></li>
-                <li class="element-date">{{ formatDate attributes.date }}</li>
+                <li class="element-location">{{ this.fm.attributes.location }} · <span class="flag-icon flag-icon-{{toLowerCase this.fm.attributes.country}}"></span></li>
+                <li class="element-date">{{ formatDate this.fm.attributes.date }}</li>
             </ul>
-            <p>{{ attributes.lede }}</p>
+            <p>{{ this.fm.attributes.lede }}</p>
         </div>
     </li>
 {{/each}}

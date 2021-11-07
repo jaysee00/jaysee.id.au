@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Exploring Bisbee
 lede: On a whim we decided to explore the historically significant town of Bisbee and its surrounds
 date: 2019-01-19

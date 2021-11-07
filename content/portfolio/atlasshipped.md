@@ -1,5 +1,5 @@
 ---
-behaviour: portfolioBlog
+listType: portfolio
 title: AtlasShipped
 lede: DIY global package shipping
 date: 2015-07-28

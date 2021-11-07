@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Moving back to Oz
 lede: Relocating back to Sydney after 7 years living in the USA
 date: 2020-01-29

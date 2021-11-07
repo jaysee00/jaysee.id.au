@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: The bustle of Busselton
 lede: Our first family trip "down south" to the South-West region of Australia.
 date: 2021-07-10

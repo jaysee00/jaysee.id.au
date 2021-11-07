@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Moving to Perth
 lede: We decided to relocate our lives to Perth at the end of 2020.
 date: 2020-11-19

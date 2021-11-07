@@ -1,5 +1,5 @@
 ---
-behaviour: portfolioBlog
+listType: portfolio
 title: Spotify for Bitbucket
 lede: For pull requests like music to your ears.
 date: 2015-07-28

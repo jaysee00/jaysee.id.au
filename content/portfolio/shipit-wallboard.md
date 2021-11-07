@@ -1,5 +1,5 @@
 ---
-behaviour: portfolioBlog
+listType: portfolio
 title: ShipIt Wallboard
 lede: Our ShipIt wallboard is bigger than your ShipIt wallboard.
 date: 2015-07-28

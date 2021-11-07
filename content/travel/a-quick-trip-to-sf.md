@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: A quick trip to SF
 lede: We spent a weekend in San Francisco to say goodbye to friends and our old home before moving back to Australia
 date: 2019-12-06

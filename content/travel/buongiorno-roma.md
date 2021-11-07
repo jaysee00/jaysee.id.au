@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Buongiorno, Roma!
 lede: Our first trip to the eternal city
 date: 2019-10-01

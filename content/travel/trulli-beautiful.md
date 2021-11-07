@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Trulli beautiful
 lede: A week in the Itria valley, staying in a 'Trulli' house and visiting the local towns
 date: 2019-10-07

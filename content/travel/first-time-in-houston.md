@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: First time in Houston
 lede: A short but action-packed weekend in Houston
 date: 2019-09-28

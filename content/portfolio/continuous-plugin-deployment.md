@@ -1,5 +1,5 @@
 ---
-behaviour: portfolioBlog
+listType: portfolio
 title: Bamboo CD Plugin
 lede: Continuous deployment for plugins
 date: 2011-12-30

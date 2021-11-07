@@ -1,3 +1,16 @@
+## Priority
+* DOn't minify CSS for dev builds
+* Add timestamp to stdout messages
+* Mirror stdout messages to logfile.
+
+* Rename graph type to tree
+* TIdy up spurious log output
+
+* Clean up package scripts
+* Delete old JS files
+
+
+
 ## Content to Add
 * Minecraft arduino box
 * Confluence Beer plugin
@@ -7,6 +20,8 @@
 * T1 Tetris?
 * T1 Soccer
 
+
+
 ## Big improvements
 * Fill out a more complete portfolio page
 * Fill out a more complete travel section
@@ -15,13 +30,11 @@
 * Add a SiteMap
 
 ## Refactoring
-* Minify and bundle CSS + JS
 * Examine Google Chrome lighthouse recommendations, eg.
-** Convert images to WebP/AVIF during build
+** Convert images to WebP/AVIF during build (eg. https://antonioagudo.com/blog/blog-stack-hugo-github-netlify/)
 ** Add PwA features
 ** Remove blocking resources
 * Refactor and tidy up CSS (Consider using LESS?)
-* Add a logging library
-**  Use a prettifying console output lib, like ?? https://github.com/marak/colors.js
 * Move flag-icon css out of src and into a module
 * Move handlebars logic into a separate module.
+* Refactor directory traversal logic for assets and content.

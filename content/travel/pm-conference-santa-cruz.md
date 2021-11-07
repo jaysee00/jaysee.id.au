@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: PM Craft Conference in Santa Cruz
 lede: A short trip to Santa Cruz for Atlassian's inaugural, internal Product Manager conference.
 date: 2018-10-10

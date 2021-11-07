@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: The happiest place on Earth!
 lede: A couple of days in Disney World
 date: 2019-11-08

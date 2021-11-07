@@ -1,12 +1,12 @@
-{{{ node.body }}}
+{{{ fm.md }}}
 <div class="cards">
-{{#each portfolioBlogs }}
+{{#each entries }}
     <a class="card"
-        href="/{{this.path}}"
-         style="background-image: url({{attributes.hero.url}})">
+        href="/{{this.url}}"
+        style="background-image: url({{this.fm.attributes.hero.url}})">
         <div class="card-title">
-        <h3>{{ attributes.title }}</h3>
-        <p>{{ attributes.lede }}</p>
+        <h3>{{ this.fm.attributes.title }}</h3>
+        <p>{{ this.fm.attributes.lede }}</p>
         {{#attributes.tags}}
             <span class="card-tag">{{this}}</span>
         {{/attributes.tags}}

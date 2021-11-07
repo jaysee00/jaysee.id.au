@@ -1,11 +1,7 @@
 ## Priority
-* Don't generate sourcemaps for prod builds
 * DOn't minify CSS for dev builds
-* gitignore compiled typescript files!
 * Add timestamp to stdout messages
 * Mirror stdout messages to logfile.
-
-
 
 * Rename graph type to tree
 * TIdy up spurious log output

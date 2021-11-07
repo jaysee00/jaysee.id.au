@@ -7,9 +7,9 @@
     "private": true,
     "scripts": {
         "dev:start": "cd build/ && npx http-server -p 8080 -d false -c-1",
-        "build": "node ./src/index.js",
-        "test": "jest",
-        "fullOn": "tsc && yarn build"
+        "dev:build": "tsc -p tsconfig.dev.json && node ./src/index.js",
+        "build": "tsc -p tsconfig.prod.json && node ./src/index.js",
+        "test": "jest"
     },
     "devDependencies": {
         "@tsconfig/recommended": "^1.0.1",

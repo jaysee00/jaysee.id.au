@@ -1,5 +1,5 @@
 ---
-behaviour: portfolioBlog
+listType: portfolio
 title: Tetronimoes in JavaScript
 lede: Learning JS and DOM manipulation by building a simple game.
 date: 2015-07-28

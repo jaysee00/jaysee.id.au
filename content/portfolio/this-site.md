@@ -1,5 +1,5 @@
 ---
-behaviour: portfolioBlog
+listType: portfolio
 title: My personal website
 lede: You're looking at it right now!
 date: 2015-07-28

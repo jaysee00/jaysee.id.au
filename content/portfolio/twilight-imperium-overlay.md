@@ -1,5 +1,5 @@
 ---
-behaviour: portfolioBlog
+listType: portfolio
 title: Twilight Imperium Stream Overlay 
 lede: Tracking victory points and donations for Extra Life.
 # TODO: Add lede, publish date, and repo URL.

@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: 2019 US Formula One
 lede: A day at the Grand Prix at Circuit of the Americas
 date: 2019-11-01

@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: First visit to Amsterdam
 lede: I was grateful for the opportunity to travel to Amsterdam to visit Atlassian's Amsterdam office and connect with some of my European colleagues.
 date: 2018-08-13

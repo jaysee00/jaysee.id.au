@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Passing through Byron
 lede: A few days in Byron Bay on our road trip from Sydney to Brisbane.
 date: 2020-07-10

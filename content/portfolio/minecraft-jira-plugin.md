@@ -1,5 +1,5 @@
 ---
-behaviour: portfolioBlog
+listType: portfolio
 title: Minecraft & Jira 
 lede: Building a Jira plugin for Minecraft
 date: 2011-12-13

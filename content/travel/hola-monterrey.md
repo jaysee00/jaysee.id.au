@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: ¡Hola Monterrey!
 lede: A trip to Mexico with history, food and friends!
 date: 2019-08-30

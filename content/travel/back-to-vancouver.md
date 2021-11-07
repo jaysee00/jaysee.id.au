@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: Back to Vancouver
 lede: Another short trip to Vancouver for our US visa renewal.
 date: 2018-07-09

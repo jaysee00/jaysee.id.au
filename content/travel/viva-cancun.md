@@ -1,5 +1,6 @@
 ---
-behaviour: travelBlog
+listType: travel
+publishUrlFormat: blogWithTimestamp
 title: ¡Viva Cancún!
 lede: A fourth of July weekend in Mexico
 date: 2019-07-04

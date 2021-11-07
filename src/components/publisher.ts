@@ -6,15 +6,16 @@ import config from '../config';
 
 const publishItem = (item: GraphItem) => {
     if (item.isDirectory) {
-        log.msg(`Creating directory ${item.absolutePath}`);
+        log.debug(`Ensuring dir ${item.absolutePath}`);
         fs.ensureDirSync(item.absolutePath);
     } else {
-        log.msg(`Creating file ${item.absolutePath}`);
-        fs.writeFileSync(item.absolutePath, item.getContents());
+        const contents = item.getContents();
+        fs.writeFileSync(item.absolutePath, contents);
     }
 }
 
 const publish = (graph: Graph) => {
+    log.success(`Running publisher`);
     // TODO: Make this optional.
     fs.rmdirSync(config.outDir, {recursive: true});
 

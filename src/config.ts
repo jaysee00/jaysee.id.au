@@ -12,7 +12,7 @@ export type RenderDef = {
     name: string,
     type: string,
     filter: GraphItemFilter,
-    options: any
+    options?: any
 }
 
 export type GraphItemFilter = {
@@ -77,6 +77,60 @@ const config: ConfigDef = {
                     name: "home",
                     href: "/"
                 }]
+            } 
+        },
+        {
+            name: 'portfolio',
+            type: 'contentListMarkdownRenderer',
+            filter: {
+                include: "**/portfolio/*.md"
+            },
+            options: {
+                template: "portfolioBlog.hbs",
+                outputPath: "portfolio/",
+            }
+        },
+        {
+            name: 'portfolioHome',
+            type: 'listPageMarkdownRenderer',
+            filter: {
+                include: "portfolio.md"
+            },
+            options: {
+                template: "portfolio.hbs",
+                outputPath: "portfolio/index.html",
+                listType: "portfolio"
+            }
+        },
+        {
+            name: 'travel',
+            type: 'contentListMarkdownRenderer',
+            filter: {
+                include: "**/travel/*.md"
+            },
+            options: {
+                template: "travelBlog.hbs",
+                // TODO: outputPath Can be replaced with the ListType attribute in the Markdown file.
+                outputPath: "travel/"
+            }
+        },
+        {
+            name: 'travelHome',
+            type: 'listPageMarkdownRenderer',
+            filter: {
+                include : 'travel.md'
+            },
+            options: {
+                template: 'travel.hbs',
+                outputPath: 'travel/index.html',
+                listType: 'travel'
+            }
+        },
+        {
+            name: 'assetCopier',
+            type: 'assetCopier',
+            filter: {
+                include: '**/assets/**/*.*'
             }
         }
     ]

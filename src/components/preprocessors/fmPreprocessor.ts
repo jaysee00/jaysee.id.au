@@ -1,4 +1,5 @@
 import fm from 'front-matter';
+import marked from 'marked';
 
 import { GraphItem, Graph, GraphOperator } from '../graph.js';
 import * as log from '../../util/log.js';
@@ -22,12 +23,16 @@ export default class FmPreprocessor implements GraphOperator {
     }
 
     processGraphItem(item: GraphItem) {        
+        log.debug(`Running FrontMatter preprocessor on ${item.fileName}`);
         if (!item.isFile) {
             return;
         }
 
-        log.debug(`Processing ${item.fileName}`);
         const node = fm(item.getContents().toString());
-        item.context.set('fm', node);
+        const mdNode: any = {...node};
+        mdNode.md = marked(node.body);
+        
+        log.debug(`I frontmattered ${mdNode.attributes.title}`);
+        item.context.set('fm', mdNode);
     };
 }

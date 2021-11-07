@@ -6,11 +6,14 @@ import config from '../config.js';
 import {Graph, GraphItem} from './graph.js';
 
 export const collect = (): Promise<Graph> => {
+    const fullSrcDir = path.resolve(config.srcDir);
+    const fullAssetsDir = path.resolve(config.assetsDir);
+
     return Promise.resolve(
         new Graph(
             [
-                collectDir(config.srcDir, config.srcDir), 
-                collectDir(config.assetsDir, config.assetsDir)
+                collectDir(fullSrcDir, fullSrcDir), 
+                collectDir(fullAssetsDir, fullAssetsDir)
             ]
         )
     );
@@ -25,16 +28,14 @@ const collectDir = (dir: string, root:string): GraphItem => {
 
     const entries: string[] = fs.readdirSync(dir);
     const items: GraphItem[] = entries.map(file => {
-        const fullPath = path.join(dir, file);
-
+        const fullPath = path.resolve(path.join(dir, file));
         if (fs.lstatSync(fullPath).isDirectory()) {
             return collectDir(fullPath, root);
-        }
-        else
-        {
-            return new GraphItem(fullPath, dir, true, false);
+        } else {
+            log.debug(`Collecting ${fullPath}`);
+            return new GraphItem(fullPath, root, true, false);
         }
     });
-
+ 
     return new GraphItem(path.resolve(dir), root, false, true, items);
 }

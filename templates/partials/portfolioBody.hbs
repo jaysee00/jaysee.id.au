@@ -1,15 +1,15 @@
-{{{ node.body }}}
+{{{ fm.md }}}
 
-{{#if node.attributes.liveUrl}}
+{{#if fm.attributes.liveUrl}}
     <div class="button-container">
-        <a class="cta-button" href="{{node.attributes.liveUrl}}">Try it out</a>
+        <a class="cta-button" href="{{fm.attributes.liveUrl}}">Try it out</a>
     </div>
 {{/if}}
 
-{{#if node.attributes.hero }}
+{{#if fm.attributes.hero }}
 <div class="blogimg">
     <hr />
-    <img src="{{ node.attributes.hero.url }}" />
-    <p>{{ node.attributes.hero.description }}</p>
+    <img src="{{ fm.attributes.hero.url }}" />
+    <p>{{ fm.attributes.hero.description }}</p>
 </div>
 {{/if}}

@@ -2,5 +2,8 @@
     "extends": "@tsconfig/recommended/tsconfig.json",
 
     "include": ["src/**/*"],
-    "exclude": ["node_modules", "**/*.spec.ts"]
+    "exclude": ["node_modules", "**/*.spec.ts"],
+    "compilerOptions": {
+        "sourceMap": true
+    }
 }

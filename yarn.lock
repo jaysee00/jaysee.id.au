@@ -624,12 +624,25 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
+"@types/jest@^27.0.2":
+  "integrity" "sha1-rDg8TUqt3Sm78rkW2NEFwwSl/Nc="
+  "resolved" "https://packages.atlassian.com/api/npm/npm-remote/@types/jest/-/jest-27.0.2.tgz"
+  "version" "27.0.2"
+  dependencies:
+    "jest-diff" "^27.0.0"
+    "pretty-format" "^27.0.0"
+
 "@types/keyv@*", "@types/keyv@^3.1.1":
   "integrity" "sha1-5FpFMk/KnatxarEjDuJJyftSz6c="
   "resolved" "https://packages.atlassian.com/api/npm/npm-remote/@types/keyv/-/keyv-3.1.1.tgz"
   "version" "3.1.1"
   dependencies:
     "@types/node" "*"
+
+"@types/marked@^3.0.2":
+  "integrity" "sha1-SmOVdVQq53Ffq75FCwgRjpCT6zU="
+  "resolved" "https://packages.atlassian.com/api/npm/npm-remote/@types/marked/-/marked-3.0.2.tgz"
+  "version" "3.0.2"
 
 "@types/minimatch@^3.0.5":
   "integrity" "sha1-EAHMXmo3BLg8I2An538vWOoBD0A="
@@ -2288,7 +2301,7 @@
     "micromatch" "^4.0.4"
     "pretty-format" "^27.3.1"
 
-"jest-diff@^27.3.1":
+"jest-diff@^27.0.0", "jest-diff@^27.3.1":
   "integrity" "sha1-0ndf6hVBH19a7aKl4CwvNkQPbVU="
   "resolved" "https://packages.atlassian.com/api/npm/npm-remote/jest-diff/-/jest-diff-27.3.1.tgz"
   "version" "27.3.1"
@@ -3302,7 +3315,7 @@
   "resolved" "https://packages.atlassian.com/api/npm/npm-remote/prepend-http/-/prepend-http-2.0.0.tgz"
   "version" "2.0.0"
 
-"pretty-format@^27.3.1":
+"pretty-format@^27.0.0", "pretty-format@^27.3.1":
   "integrity" "sha1-fpSGNlzN1KUCBh+nYdOrnKG3jfU="
   "resolved" "https://packages.atlassian.com/api/npm/npm-remote/pretty-format/-/pretty-format-27.3.1.tgz"
   "version" "27.3.1"

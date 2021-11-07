@@ -1,7 +1,19 @@
 ## Priority
+* Don't generate sourcemaps for prod builds
+* DOn't minify CSS for dev builds
 * gitignore compiled typescript files!
 * Add timestamp to stdout messages
 * Mirror stdout messages to logfile.
+
+
+
+* Rename graph type to tree
+* TIdy up spurious log output
+
+* Clean up package scripts
+* Delete old JS files
+
+
 
 ## Content to Add
 * Minecraft arduino box
@@ -27,8 +39,6 @@
 ** Add PwA features
 ** Remove blocking resources
 * Refactor and tidy up CSS (Consider using LESS?)
-* Add a logging library
-**  Use a prettifying console output lib, like ?? https://github.com/marak/colors.js
 * Move flag-icon css out of src and into a module
 * Move handlebars logic into a separate module.
 * Refactor directory traversal logic for assets and content.

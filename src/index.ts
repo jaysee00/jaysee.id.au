@@ -10,6 +10,12 @@ import * as log from './util/log.js';
 
 log.success("Beginning publish operation");
 
+process.on('unhandledRejection', (error: any, p) => {
+    console.log('Unhandled Rejection at: Promise', p, 'reason:', error);
+    // application specific logging, throwing an error, or other logic here
+    console.log(error.stack);
+});
+
 collect()
     .then((inputGraph: Graph) => {
         return preprocess(inputGraph);  
@@ -29,3 +35,5 @@ collect()
     .catch((err) => {
         throw new Error(err);
     });
+
+   

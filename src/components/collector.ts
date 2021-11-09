@@ -1,13 +1,16 @@
 import * as fs from 'fs-extra';
 import * as path from 'path';
 
-import * as log from '../util/log.js';
+import * as log from '../util/log';
 import config from '../config.js';
 import {Graph, GraphItem} from './graph.js';
 
 export const collect = (): Promise<Graph> => {
+    log.msg('Collecting files for site build');
     const fullSrcDir = path.resolve(config.srcDir);
+    log.msg(`> Source Dir: '${fullSrcDir}'`);
     const fullAssetsDir = path.resolve(config.assetsDir);
+    log.msg(`> Assets Dir: '${fullAssetsDir}'`);
 
     return Promise.resolve(
         new Graph(
@@ -20,8 +23,6 @@ export const collect = (): Promise<Graph> => {
 };
 
 const collectDir = (dir: string, root:string): GraphItem => {
-    log.success(`Collecting files from ${dir}`);
-
     if (!fs.existsSync(dir)) {
         throw new Error(`Directory ${dir} does not exist.`);
     }
@@ -32,7 +33,6 @@ const collectDir = (dir: string, root:string): GraphItem => {
         if (fs.lstatSync(fullPath).isDirectory()) {
             return collectDir(fullPath, root);
         } else {
-            log.debug(`Collecting ${fullPath}`);
             return new GraphItem(fullPath, root, true, false);
         }
     });

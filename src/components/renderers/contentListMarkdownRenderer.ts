@@ -63,7 +63,6 @@ export class ContentListMarkdownRenderer implements Renderer {
     }   
 
     run(inputGraph: Graph, outputGraph: Graph, context: renderContext) {
-        log.msg(`Running ${this.name} Content List Markdown renderer`);
         inputGraph.filter(this.filter).visit(this.getItemRenderer(inputGraph, outputGraph, context.clone()))
     }
 }

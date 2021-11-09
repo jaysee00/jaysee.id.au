@@ -1,31 +1,38 @@
-import chalk from 'chalk';
+import chalk, { ChalkFunction } from 'chalk';
 import config from '../config';
+import moment from 'moment';
 
-const log = console.log;
+const log = (colorFunc: ChalkFunction, message: string, ): void => {
+    console.log(colorFunc(`[${moment().format('HH:mm:ss')}] ${message}`));
+}
 
+export const stage = (stage: string): void => {
+    log(chalk.reset, `-- Stage: ${chalk.bold(stage)} --`);
+}
 
 export const success = (message: string): void => {
-    log(`[SUCCESS] ${chalk.green(message)}`);
+    log(chalk.green, `[SUCCESS] ${message}`);
 }
 
 export const alert = (message:string): void => {
-    log(`[ALERT] ${chalk.magenta(message)}`);
+    log(chalk.magenta, `[ALERT] ${message}`);
 }
 
 export const debug = (message: string): void => {
     if (config.debug) {
-        log(`[DEBUG] ${chalk.grey(message)}`);
+        log(chalk.grey, `[DEBUG] ${message}`);
     }
 }
 
 export const ok = (message: string): void => {
-    log(`[OK] ${chalk.blue(message)}`);
+    log(chalk.blueBright, `[OK] ${message}`);
 }
 
 export const msg = (message: string): void => {
-    log(message);
+    log(chalk.reset, `[MSG] ${message}`);
 }
 
 export const err = (message: string): void => {
-    console.error(`[ERROR] ${chalk.red(message)}`);
+    // TODO: Log to stderr
+    log(chalk.red, `[ERROR] ${message}`);
 }

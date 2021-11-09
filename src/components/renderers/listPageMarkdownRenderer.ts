@@ -55,17 +55,13 @@ export class ListPageMarkdownRenderer implements Renderer {
                 // TODO: This logic needs to be coupled to the url publishing logic in contentListMarkdownRenderer
                 const attributes = i.context.get('fm').attributes;
                 var itemUrl;
-                log.debug(`Examining URL Publish Format ${attributes.publishUrlFormat}`);
                 if (attributes.publishUrlFormat && attributes.publishUrlFormat === 'blogWithTimestamp') {
-                    log.debug(`Item URL includes timestamp`);
                     const publishDate = moment(attributes.date, 'YYYY-MM-DD').format('YYYY/MM/DD');
                     itemUrl = `${attributes.listType}/${publishDate}/${path.parse(i.fileName).name}.html`;
                 }
                 else {
                     itemUrl = `${attributes.listType}/${path.parse(i.fileName).name}.html`;
-                }
-                log.debug(`Item URL calculated as ${itemUrl}`);
-                
+                }                
                 i.context.set('url', itemUrl);
                 return i.context.hbsIt();
             }));
@@ -85,7 +81,6 @@ export class ListPageMarkdownRenderer implements Renderer {
     }   
 
     run(inputGraph: Graph, outputGraph: Graph, context: renderContext) {
-        log.msg(`Running ${this.name} Content List Markdown renderer`);
         inputGraph.filter(this.filter).visit(this.getItemRenderer(inputGraph, outputGraph, context.clone()))
     }
 }

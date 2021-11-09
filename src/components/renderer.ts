@@ -11,9 +11,8 @@ export const render = (inputGraph: Graph, context: RenderContext): Graph => {
     const outputGraph = new Graph(new Array<GraphItem>());
     
     // Trigger each configured render behaviour 
-    log.msg("Loading renderer behaviours");
     config.render.forEach((def) => {
-        log.msg(`Running ${def.name} renderer`);
+        log.msg(`Running ${def.type} '${def.name}'`);
         const renderer = getRenderer(def);
         renderer.run(inputGraph, outputGraph, context);
      });

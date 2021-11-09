@@ -179,6 +179,12 @@ export class Graph {
         return result;
     }
 
+    size(filesOnly: boolean = true): number {
+        let counter = 0;
+        this.visit((i) => i.isFile || !filesOnly ? counter++ : null);
+        return counter;
+    }
+
     toLogString(): string {
         let str = "";
         this.items.forEach(i => {

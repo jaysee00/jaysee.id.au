@@ -17,12 +17,10 @@ const getPreprocessor = (def: PreprocessorDef): GraphOperator => {
 
 export const preprocess = (graph: Graph): Promise<Graph> => {
     // Load pre-processors
-    log.msg("Loading preprocessors");
     config.preprocess.forEach(def => {
-        log.msg(`Loading preprocessor for ${def.name}`);
         const preprocessor = getPreprocessor(def);
+        log.msg(`Running preprocessor '${def.name}'`);
         preprocessor.run(graph);
     });
-
     return Promise.resolve(graph);
 }

@@ -9,7 +9,6 @@ import * as log from '../../util/log';
 export default class BuildInfoPrerenderer implements Prerenderer {
 
     async run(graph: Graph, context: RenderContext): Promise<void> {
-        log.debug(`Running buildInfo prerenderer`);
         // Load the repo
         const repo = await Git.Repository.open(".")
         const commit = await repo.getBranchCommit("main");
@@ -21,7 +20,7 @@ export default class BuildInfoPrerenderer implements Prerenderer {
             hash: commit.id().toString(),
             shortHash: commit.id().toString().slice(0, 6)
         };
-        log.debug(`Setting buildInfo context to ${commitInfo}`);
+        log.alert(`> Running build against ${commitInfo.shortHash}, committed on ${commitInfo.date}`);
         context.set('buildInfo', commitInfo);
     }
 }

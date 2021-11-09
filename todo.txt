@@ -1,15 +1,12 @@
 ## Priority
-* DOn't minify CSS for dev builds
+* Run tests as part of dev and prod builds
+* Make sure nodemon still working with TSC
+* Don't minify CSS for dev builds
 * Add timestamp to stdout messages
 * Mirror stdout messages to logfile.
 
 * Rename graph type to tree
-* TIdy up spurious log output
-
-* Clean up package scripts
-* Delete old JS files
-
-
+* Tidy up spurious log output
 
 ## Content to Add
 * Minecraft arduino box
@@ -20,10 +17,7 @@
 * T1 Tetris?
 * T1 Soccer
 
-
-
 ## Big improvements
-* Fill out a more complete portfolio page
 * Fill out a more complete travel section
 * Add a section for my speaking portfolio
 * Add filterable 'tags' to the portfolio (eg. java/js, shipit)

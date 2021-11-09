@@ -1,4 +1,5 @@
 import fs from 'fs-extra';
+import path from 'path';
 
 import { Graph, GraphItem } from './graph';
 import * as log from '../util/log';
@@ -6,7 +7,6 @@ import config from '../config';
 
 const publishItem = (item: GraphItem) => {
     if (item.isDirectory) {
-        log.debug(`Ensuring dir ${item.absolutePath}`);
         fs.ensureDirSync(item.absolutePath);
     } else {
         const contents = item.getContents();
@@ -15,9 +15,14 @@ const publishItem = (item: GraphItem) => {
 }
 
 const publish = (graph: Graph) => {
-    log.success(`Running publisher`);
+    const fullOutPath = path.resolve(config.outDir);
+    log.msg(`Publishing to output directory`);
+    log.msg(`> Output dir: ${fullOutPath}`);
+    log.msg(`> ${graph.size()} files to publish`);
     // TODO: Make this optional.
-    fs.rmdirSync(config.outDir, {recursive: true});
+    fs.rmdirSync(fullOutPath, {recursive: true});
+
+
 
     graph.visit(publishItem);
 }

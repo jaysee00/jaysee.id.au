@@ -12,8 +12,8 @@ export const prerender = async (graph: Graph): Promise<[Graph, RenderContext]> =
     const renderContext = new RenderContext();
     
     // Load prerenderers
-    log.msg("Loading prerenderers");
     for (const def of config.prerender) {
+        log.msg(`Running pre-renderer '${def.name}`);
         await getPrerenderer(def).run(graph, renderContext);
     } 
      return Promise.resolve([graph, renderContext]);

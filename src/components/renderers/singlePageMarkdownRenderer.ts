@@ -53,7 +53,6 @@ export class SinglePageMarkdownRenderer implements Renderer {
     }
 
     run(inputGraph: Graph, outputGraph: Graph, context: RenderContext) {
-        log.msg(`Running ${this.name} Single Page Markdown renderer`);
         inputGraph.filter(this.filter).visit(this.getItemRenderer(inputGraph, outputGraph, context.clone()))
     }
 

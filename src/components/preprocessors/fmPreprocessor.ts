@@ -18,12 +18,12 @@ export default class FmPreprocessor implements GraphOperator {
     }
 
     run(graph: Graph) {
-        log.msg(`Running FrontMatter preprocessor`);
-        graph.filter(this.filter).visit(this.processGraphItem)
+        const filteredGraph = graph.filter(this.filter);
+        log.msg(`> Filtered ${filteredGraph.size()} files for preprocessing.`);
+        filteredGraph.visit(this.processGraphItem)
     }
 
     processGraphItem(item: GraphItem) {        
-        log.debug(`Running FrontMatter preprocessor on ${item.fileName}`);
         if (!item.isFile) {
             return;
         }
@@ -31,8 +31,6 @@ export default class FmPreprocessor implements GraphOperator {
         const node = fm(item.getContents().toString());
         const mdNode: any = {...node};
         mdNode.md = marked(node.body);
-        
-        log.debug(`I frontmattered ${mdNode.attributes.title}`);
         item.context.set('fm', mdNode);
     };
 }

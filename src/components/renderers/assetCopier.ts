@@ -5,7 +5,6 @@ import { Graph, GraphItem } from '../graph';
 import config, { GraphItemFilter, RenderDef } from "../../config";
 import RenderContext from "../renderContext";
 import * as log from '../../util/log';
-import { isDuration } from 'moment';
 
 export class AssetCopier implements Renderer {
 
@@ -42,7 +41,6 @@ export class AssetCopier implements Renderer {
     }
 
     run(inputGraph: Graph, outputGraph: Graph, context: RenderContext) {
-        log.msg(`Running ${this.name} Asset Copier`);
         inputGraph.filter(this.filter).visit(this.getItemRenderer(inputGraph, outputGraph, context.clone()))
     }
 }

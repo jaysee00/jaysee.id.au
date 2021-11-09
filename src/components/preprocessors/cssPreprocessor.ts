@@ -17,7 +17,6 @@ class CssPreprocessor implements GraphOperator {
     }
 
     run(graph: Graph) {
-        log.msg(`Running CSS preprocessor`);
         graph.filter(this.filter).visit(this.processGraphItem)
     }
 
@@ -27,7 +26,7 @@ class CssPreprocessor implements GraphOperator {
         }
 
         // minify
-        log.msg(`Minifying ${item.fileName}`);
+        log.msg(`> Minifying ${item.fileName}`);
         const output = new CleanCSS({}).minify(item.getContents());
     
         item.getContents = () => {

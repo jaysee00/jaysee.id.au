@@ -31,4 +31,3 @@
 * Refactor and tidy up CSS (Consider using LESS?)
 * Move flag-icon css out of src and into a module
 * Move handlebars logic into a separate module.
-* Refactor directory traversal logic for assets and content.

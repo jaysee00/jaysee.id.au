@@ -11,7 +11,7 @@ export default class BuildInfoPrerenderer implements Prerenderer {
     async run(graph: Graph, context: RenderContext): Promise<void> {
         // Load the repo
         const repo = await Git.Repository.open(".")
-        const commit = await repo.getBranchCommit("main");
+        const commit = await repo.getHeadCommit();
 
         const commitInfo = {
             year: moment().format('YYYY'),

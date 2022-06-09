@@ -639,10 +639,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/marked@^3.0.2":
-  version "3.0.2"
-  resolved "https://packages.atlassian.com/api/npm/npm-remote/@types/marked/-/marked-3.0.2.tgz"
-  integrity sha1-SmOVdVQq53Ffq75FCwgRjpCT6zU=
+"@types/marked@^4.0.3":
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/@types/marked/-/marked-4.0.3.tgz#2098f4a77adaba9ce881c9e0b6baf29116e5acc4"
+  integrity sha512-HnMWQkLJEf/PnxZIfbm0yGJRRZYYMhb++O9M36UCTA9z53uPvVoSlAwJr3XOpDEryb7Hwl1qAx/MV6YIW1RXxg==
 
 "@types/minimatch@^3.0.5":
   version "3.0.5"
@@ -2792,10 +2792,10 @@ makeerror@1.0.x:
   dependencies:
     tmpl "1.0.x"
 
-marked@^2.0.0:
-  version "2.0.1"
-  resolved "https://packages.atlassian.com/api/npm/npm-remote/marked/-/marked-2.0.1.tgz"
-  integrity sha1-Xn7XAJv6XJUYLk62lvhelIzvzuM=
+marked@^4.0.16:
+  version "4.0.16"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.0.16.tgz#9ec18fc1a723032eb28666100344d9428cf7a264"
+  integrity sha512-wahonIQ5Jnyatt2fn8KqF/nIqZM8mh3oRu2+l5EANGMhu6RFjiSG52QNE2eWzFMI94HqYSgN184NurgNG6CztA==
 
 merge-stream@^2.0.0:
   version "2.0.0"

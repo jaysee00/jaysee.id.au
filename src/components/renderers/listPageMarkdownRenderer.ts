@@ -49,6 +49,11 @@ export class ListPageMarkdownRenderer implements Renderer {
                 return (fm.attributes.listType === this.options.listType);
             }
             const listItems = inputGraph.filter(filterFunc).flatten();
+            listItems.sort((a, b) => {
+                //date
+                return moment.utc(b.context.get('fm').attributes.date).diff(moment.utc(a.context.get('fm').attributes.date));
+            });
+
             // TODO: Consider slicing to only show the top 10 entries, or introduce pagination.
             // TODO: Ensure entries are sorted by reverse chronological publish date.
             context.set('entries', listItems.map((i) => {

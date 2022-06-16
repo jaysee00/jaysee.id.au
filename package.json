@@ -33,7 +33,7 @@
         "nodemon": "^2.0.13",
         "normalize-url": "^4.5.1",
         "tar": "^4.4.18",
-        "typescript": "^4.4.4"
+        "typescript": "^4.7.3"
     },
     "jest": {
         "testMatch": [

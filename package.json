@@ -22,7 +22,7 @@
         "chalk": "^4.1.2",
         "clean-css": "^5.2.1",
         "front-matter": "^4.0.2",
-        "fs-extra": "^9.0.1",
+        "fs-extra": "^10.1.0",
         "handlebars": "^4.7.6",
         "http-server": "^13.0.1",
         "jest": "^27.3.1",

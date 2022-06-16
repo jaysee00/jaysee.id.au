@@ -1,5 +1,5 @@
 import fm from 'front-matter';
-import marked from 'marked';
+import { marked } from 'marked';
 
 import { GraphItem, Graph, GraphOperator } from '../graph.js';
 import * as log from '../../util/log.js';

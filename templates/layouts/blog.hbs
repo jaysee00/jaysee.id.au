@@ -1,6 +1,7 @@
-{{!--  TODO: Reconcile this template with the 'home' layout --}}
+{{!-- TODO: Reconcile this template with the 'home' layout --}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no" />
@@ -10,6 +11,16 @@
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link href="/flag-icon-css/css/flag-icon.min.css" rel="stylesheet" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-60P0SQEKLP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-60P0SQEKLP');
+    </script>
 
     {{#if fm.attributes.coords}}
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
@@ -23,6 +34,7 @@
         <h1>{{ fm.attributes.title }}</h1>
         {{> (lookup . "bodyTemplate") }}
     </main>
-   {{> footer}}
+    {{> footer}}
 </body>
+
 </html>

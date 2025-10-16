@@ -18,7 +18,6 @@
         "@types/jest": "^27.0.2",
         "@types/marked": "^4.0.3",
         "@types/minimatch": "^3.0.5",
-        "@types/nodegit": "^0.27.3",
         "chalk": "^4.1.2",
         "clean-css": "^5.2.1",
         "front-matter": "^4.0.2",
@@ -29,8 +28,7 @@
         "marked": "^4.0.16",
         "minimatch": "^3.0.4",
         "moment": "^2.29.2",
-        "nodegit": "^0.27.0",
-        "nodemon": "^2.0.13",
+        "nodemon": "^2.0.22",
         "normalize-url": "^4.5.1",
         "tar": "^4.4.18",
         "typescript": "^4.4.4"
@@ -47,5 +45,10 @@
             "node_modules",
             "build"
         ]
+    },
+    "dependencies": {
+        "@isomorphic-git/lightning-fs": "^4.6.2",
+        "buffer": "^6.0.3",
+        "isomorphic-git": "^1.34.0"
     }
 }

@@ -20,10 +20,9 @@ const publish = (graph: Graph) => {
     log.msg(`Publishing to output directory`);
     log.msg(`> Output dir: ${fullOutPath}`);
     log.msg(`> ${graph.size()} files to publish`);
-    // TODO: Make this optional.
-    fs.rmSync(fullOutPath, {recursive: true});
-
-
+    if (fs.existsSync(fullOutPath)) {
+        fs.rmSync(fullOutPath, {recursive: true});
+    }
 
     graph.visit(publishItem);
 }

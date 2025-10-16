@@ -1,4 +1,5 @@
-import fs from 'fs-extra';
+import fs from 'fs';
+import * as fsExtra from 'fs-extra';
 import path from 'path';
 
 import { Graph, GraphItem } from './graph';
@@ -7,7 +8,7 @@ import config from '../config';
 
 const publishItem = (item: GraphItem) => {
     if (item.isDirectory) {
-        fs.ensureDirSync(item.absolutePath);
+        fsExtra.ensureDirSync(item.absolutePath);
     } else {
         const contents = item.getContents();
         fs.writeFileSync(item.absolutePath, contents);
